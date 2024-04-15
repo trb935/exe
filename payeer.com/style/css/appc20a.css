@@ -1,0 +1,1136 @@
+/*@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/app/ProximaNovaCond-Regular.eot");
+  src: local('Proxima Nova Condensed Regular'), local('../fonts/app/ProximaNovaCond-Regular'), url("../fonts/app/ProximaNovaCond-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/app/ProximaNovaCond-Regular.woff") format('woff'), url("../fonts/app/ProximaNovaCond-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}*/
+img {
+   width: inherit;
+}
+.main-svg-sprite {
+  display: none;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  font-size: 0;
+}
+
+.svg-icon__link {
+  vertical-align: top;
+  fill: inherit;
+  width: inherit;
+  height: inherit;
+}
+/*
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/app/ProximaNova-Regular.woff2") format('woff2'), url("../fonts/app/ProximaNova-Regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Proxima Nova'), url("../fonts/app/proximaNova-semibold.woff2") format('woff2'), url("../fonts/app/proximaNova-semibold.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 900;
+  font-style: normal;
+  src: local('Proxima Nova'), url("../fonts/app/proximaNova-bold.woff2") format('woff2'), url("../fonts/app/proximaNova-bold.otf") format('opentype'), url("../fonts/app/proximaNova-bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url("../fonts/app/FuturaNewMedium-Reg.woff2") format('woff2'), url("../fonts/app/FuturaNewMedium-Reg.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url("../fonts/app/FuturaNewLight-Reg.woff2") format('woff2'), url("../fonts/app/FuturaNewLight-Reg.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New Demi';
+  src: url("../fonts/app/FuturaNewDemi-Reg.woff2") format('woff2'), url("../fonts/app/FuturaNewDemi-Reg.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+/**
+ * The CSS class screen-reader-text
+ *
+ * @link https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
+ */
+
+.visuallyhidden,
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.visuallyhidden:active,
+.screen-reader-text:active,
+.visuallyhidden:focus,
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  -webkit-clip-path: none;
+          clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000 ;
+}
+
+
+.app {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  height: 100vh;
+}
+
+.app__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+}
+
+.app__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+}
+
+.app__main {
+  -ms-flex: 1 1;
+      flex: 1 1;
+}
+
+.btn2 {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  font-family: 'Futura New';
+  font-style: normal;
+  font-weight: 300;
+  border-radius: 50px;
+  padding: 19px 36px;
+  margin-right: 23px;
+  margin-bottom: 22px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 1;
+  /*text-transform: uppercase;*/
+}
+
+.btn2--green {
+  background: linear-gradient(168.03deg, #49D60A 3.5%, #09CB01 97.72%);
+  box-shadow: 0px 6px 10px rgba(14, 61, 9, 0.0953068);
+}
+
+.btn2--white {
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,0.7);
+}
+
+.btn2--blue {
+  color: #03a9f4;
+  box-shadow: inset 0 0 0 3px rgba(3,169,244,0.7);
+}
+.btn2.btn2--blue.demo-but:hover {
+   background: #03a9f4;
+   color: #fff;
+}
+
+.btn2 img {
+  margin-right: 20px;
+}
+
+.b-advantages {
+  background-size: cover;
+  -ms-flex: none;
+      flex: none;
+}
+
+.b-advantages__inner {
+  max-width: 908px;
+  margin: 0 auto;
+  padding: 108px 10px 33px;
+}
+
+.b-advantages__title {
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0 auto;
+  color: #03a9f4;
+  text-align: center;
+}
+
+.b-advantages__title span {
+  color: #333;
+}
+
+.b-advantages__text {
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 31px;
+  margin-bottom: 84px;
+}
+
+.b-advantages__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.b-advantages__item {
+  max-width: 26%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.b-advantages__item-text {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 26px;
+}
+
+.b-advantages__item-img {
+  padding-bottom: 15px;
+  width: 100px;
+  height: 105px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.b-connecting {
+  -ms-flex: none;
+      flex: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.b-connecting__icon {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 94px;
+  margin-bottom: 41px;
+}
+
+.b-connecting__inner {
+  max-width: 764px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 145px 0 104px;
+}
+
+.b-connecting__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+.b-connecting__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 82px;
+}
+
+.b-connecting__arrow {
+  padding-bottom: 35px;
+  padding-top: 30px;
+}
+
+.b-connecting__number {
+  font-size: 40px;
+  line-height: 1;
+  color: #9bdcff;
+}
+
+.b-connecting__item-text {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.b-connecting__text {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.b-connecting__buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 44px;
+}
+.b-exchange {
+  -ms-flex: none;
+      flex: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  background: url("../images/app/fone3.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.b-exchange__inner {
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 95px 10px 61px;
+}
+
+.b-exchange__title {
+  margin-top: -56px;
+  margin-bottom: 9px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  font-size: 40px;
+  line-height: 70px;
+  color: #fff;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-weight: 700;
+}
+
+.b-exchange__text {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 42px;
+}
+
+.b-map {
+  -ms-flex: none;
+      flex: none;
+  background: url("../images/app/fone4.png") 0 0 no-repeat;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.b-map__icons {
+  margin-left: -60px;
+  margin-right: -60px;
+}
+
+.b-map__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 98px 10px 68px;
+}
+
+.b-map__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+}
+
+.b-map__bottom {
+  margin: -82px 0 0 23px;
+  z-index: 8;
+  text-align: center;
+}
+
+.b-map__title {
+  font-size: 40px;
+  line-height: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.b-map__predtitle {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 27px;
+  color: #fff;
+}
+
+.b-map__text {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  padding-top: 42px;
+  padding-bottom: 32px;
+}
+
+.b-want {
+  padding: 106px 10px;
+  -ms-flex: none;
+      flex: none;
+  text-align: center;
+}
+
+.b-want__content {
+  max-width: 666px;
+  margin: 0 auto;
+}
+
+.b-want__title {
+  margin-bottom: 28px;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.b-want__text {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 55px;
+}
+
+.b-table {
+  padding: 0 10px 10px;
+}
+
+.b-table__content {
+  max-width: 1082px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #042433;
+  line-height: 1.2;
+}
+
+.b-table__item {
+  margin-top: 100px;
+}
+
+.b-table__item--replacement table td + td + td {
+  width: 160px;
+}
+
+.b-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.b-table table h2 {
+  font-weight: bold;
+  font-size: 54px;
+  color: #042433;
+  margin: 0;
+  font-family: 'Proxima Nova';
+}
+
+.b-table table thead {
+  font-size: 26px;
+  line-height: 1;
+  font-family: 'Futura New';
+}
+
+.b-table table thead td {
+  padding: 0 0 36px;
+}
+
+.b-table table thead td + td {
+  padding-left: 24px;
+}
+
+.b-table table tbody td {
+  padding: 20px 24px 21px;
+}
+
+.b-table table td:first-child {
+  width: 375px;
+}
+
+.b-table table:not(.t-replacement) tbody tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.b-table table:not(.t-replacement) tbody tr:nth-child(even) td {
+  background-color: #f4f4f4;
+}
+
+.b-table table:not(.t-replacement) tbody tr:first-child td:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.b-table table:not(.t-replacement) tbody tr:first-child td:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.b-table table:not(.t-replacement) tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+.b-table table:not(.t-replacement) tbody tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+.b-table table:not(.t-replacement) tbody td {
+  background-color: #fbfbfb;
+}
+
+.b-table .hidden {
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+  position: absolute;
+  -webkit-overflow-scrolling: touch;
+}
+
+.b-table .t-replacement {
+  border-spacing: 0 20px;
+  border-collapse: inherit;
+}
+
+.b-table .t-replacement thead td {
+  padding-bottom: 10px !important;
+}
+
+.b-table .t-replacement tbody td {
+  background-color: #fbfbfb;
+}
+
+.b-table .t-replacement tbody td:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.b-table .t-replacement tbody td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.create-account {
+  background-size: cover;
+}
+
+.create-account__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1102px;
+  margin: 0 auto;
+  padding: 77px 10px;
+}
+
+.create-account__image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 1;
+      flex: 1 1;
+  padding-left: 30px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 415px;
+  right: 811px;
+  margin-right: 31px;
+}
+
+.create-account__anonce {
+  max-width: 506px;
+  padding-top: 60px;
+}
+
+.create-account__anonce-predtitle {
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3px;
+  mix-blend-mode: normal;
+  padding-bottom: 10px;
+}
+
+.create-account__anonce-title {
+  font-size: 54px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: 700;
+  mix-blend-mode: normal;
+  padding-bottom: 20px;
+}
+
+.create-account__anonce-title span {
+  display: block;
+  font-size: 70%;
+}
+
+.create-account__anonce-text {
+  font-size: 23px;
+  line-height: 35px;
+  color: #fff;
+  width: 100%;
+  padding-bottom: 25px;
+  mix-blend-mode: normal;
+}
+
+.crypto-services {
+  -ms-flex: none;
+      flex: none;
+  margin: 0 auto;
+}
+
+.crypto-services__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 115px 10px 100px;
+}
+
+.crypto-services__icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto;
+}
+
+.crypto-services__title {
+  /*display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;*/
+   text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-bottom: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.crypto-services__predtitle {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.crypto-services__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  padding-top: 46px;
+}
+
+.crypto-services__item {
+  padding: 16px 20px 0;
+}
+
+.crypto-services__item-img {
+  min-height: 106px;
+}
+
+.crypto-services__item-text {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  line-height: 26px;
+}
+
+.crypto-services__after-text {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+  padding-top: 47px;
+}
+
+.cryptoacquiring {
+  -ms-flex: none;
+      flex: none;
+  margin: 0 auto;
+}
+
+.cryptoacquiring__img {
+  min-height: 97px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 15px;
+}
+
+.cryptoacquiring__icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.cryptoacquiring__predtitle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.cryptoacquiring__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 86px 10px 181px;
+}
+
+.cryptoacquiring__title {
+  font-family: 'Proxima Nova';
+  font-size: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 45px;
+  font-weight: 700;
+  padding-top: 42px;
+}
+
+.cryptoacquiring__predtitle {
+  font-family: 'Proxima Nova';
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+.cryptoacquiring__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  padding-top: 41px;
+}
+
+.cryptoacquiring__item {
+  font-size: 20px;
+  width: 33%;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  padding: 22px 30px 0;
+}
+
+.cryptoacquiring__text {
+  font-family: 'Proxima Nova';
+  font-size: 20px;
+  line-height: 30px;
+  padding: 50px 16px 0 5px;
+  text-align: center;
+  color: #000;
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .create-account__inner {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+  }
+
+  .create-account__image {
+    -ms-flex-order: -1;
+        order: -1;
+  }
+
+  .create-account__anonce-title {
+    line-height: 1.2;
+    font-size: 34px;
+  }
+
+  .create-account__anonce-text {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .crypto-services__inner {
+    padding: 80px 10px 0;
+  }
+
+  .crypto-services__item-img {
+    display: inline-block;
+    max-width: 60px;
+    min-height: 80px;
+  }
+
+  .crypto-services__item-text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .btn2 {
+    padding: 16px 26px;
+    font-size: 18px;
+    margin: 0 10px 20px;
+  }
+
+  .btn2 img {
+    margin-right: 10px;
+  }
+
+  .b-advantages__title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .b-advantages__text {
+    padding-top: 0;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .b-advantages__item {
+    max-width: 45%;
+  }
+
+  .b-advantages__item-text {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .b-connecting br {
+    display: none;
+  }
+
+  .b-connecting__arrow {
+    display: none;
+  }
+
+  .b-connecting__items {
+    padding-bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .b-connecting__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .b-connecting__item-text {
+    font-size: 16px;
+  }
+
+  .b-connecting__icon {
+    margin-bottom: 10px;
+  }
+
+  .b-connecting__inner {
+    padding: 60px 10px;
+  }
+
+  .b-connecting__title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .b-connecting__text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .b-connecting__buttons {
+    display: block;
+  }
+
+  .b-exchange__title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+
+  .b-exchange__text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .b-map br {
+    display: none;
+  }
+
+  .b-map__icons {
+    margin-left: 0;
+  }
+
+  .b-map__bottom {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .b-map__title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .b-map__predtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-top: 0;
+  }
+
+  .b-map__text {
+    padding: 20px 0 0;
+  }
+
+  .b-map__inner {
+    padding-top: 40px;
+  }
+
+  .b-want {
+    padding: 80px 10px;
+  }
+
+  .b-want__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .b-want__text {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .b-table__item {
+    margin-top: 60px;
+    overflow-x: auto;
+    margin-right: -10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .b-table .b-table__item::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  .b-table .b-table__item::-webkit-scrollbar:vertical {
+    width: 3px;
+  }
+
+  .b-table .b-table__item::-webkit-scrollbar:horizontal {
+    height: 3px;
+  }
+
+  .b-table .b-table__item::-webkit-scrollbar-thumb {
+    background-color: #9bdcff;
+  }
+
+  .b-table__content {
+    font-size: 14px;
+  }
+
+  .b-table__item--replacement table td + td + td {
+    width: 126px;
+  }
+
+  .b-table table {
+    width: 740px;
+  }
+
+  .b-table table td:first-child {
+    width: 270px;
+  }
+
+  .b-table table thead {
+    font-size: 20px;
+  }
+
+  .b-table table thead td {
+    padding-bottom: 20px;
+  }
+
+  .b-table table tbody td {
+    padding: 10px 20px;
+  }
+
+  .b-table table tbody tr:last-child td {
+    border-radius: 0 !important;
+  }
+
+  .b-table table h2 {
+    font-size: 30px;
+  }
+
+  .crypto-services__title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .crypto-services__predtitle {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .crypto-services__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .crypto-services__after-text {
+    font-size: 18px;
+    line-height: 1.4;
+    padding-top: 20px;
+  }
+
+  .crypto-services__item {
+    width: 50%;
+    margin: 20px 0;
+  }
+
+  .crypto-services__item br {
+    display: none;
+  }
+
+  .crypto-services__item-img {
+    min-height: 60px;
+  }
+
+  .cryptoacquiring {
+    text-align: center;
+  }
+
+  .cryptoacquiring__inner {
+    padding: 100px 10px 70px;
+  }
+
+  .cryptoacquiring__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .cryptoacquiring__item {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .cryptoacquiring br {
+    display: none;
+  }
+
+  .cryptoacquiring__img {
+    min-height: 1px;
+  }
+}
